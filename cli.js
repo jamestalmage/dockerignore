@@ -14,8 +14,8 @@ log.runner = 'dockerignore';
  * Find the local `ignore` files we need
  */
 
-var gitignore = argv.g || '.gitignore';
-var dockerignore = argv.d || '.dockerignore';
+var gitignore = argv.g || argv.gitignore || '.gitignore';
+var dockerignore = argv.d || argv.dockerignore || '.dockerignore';
 
 // optionally specify a different destination
 var dest = argv.D || argv.dest || dockerignore;
